@@ -12,7 +12,7 @@ I am an undergraduate student in the **School of Mathematics and Statistics** at
 
 ## Visiting & Research Experience
 
-- **Visiting Student**, Human-Machine Institute (人机所), Xi'an Jiaotong University — Oct. 2025 to May 2026.
+- **Visiting Student**, [Cognitive Architecture Group](https://xjtuiair-urlab.github.io/portal/) (**CAG Lab**), Institute of AI & Robotics, Xi'an Jiaotong University, with Prof. Pengju Ren and Boran Zhao — Oct. 2025 to May 2026.
 - **Visiting Student**, [ENCODE Lab](https://westlake-encode-lab.github.io/), [Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Huan Wang](https://huanwang.tech/) (王欢) — since Apr. 12, 2026.
 
 ## Research Interests
