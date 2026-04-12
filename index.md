@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). I work on large language models, reasoning, and distillation, and I think about how we can **evaluate** whether systems show intelligence beyond pattern matching.
+I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). I work on large language models, reasoning, and distillation. **Currently I am thinking about** how we might evaluate whether systems show intelligence beyond pattern matching.
 
 ## Education
 
@@ -28,8 +28,8 @@ I am an undergraduate student in the **School of Mathematics and Statistics** at
 - Large language models and reasoning
 - Chain-of-thought (CoT) distillation and multi-teacher learning
 - Model efficiency and knowledge transfer
-- **Evaluation & “measure of intelligence”:** empirical limits of knowing strong AI/AGI (Turing-style questions; abstraction, causality, beyond pure fitting)
-- **Experiments & benchmarks** that probe competences beyond interpolation on training-like data
+- The **measure of intelligence**
+- **Measuring knowledge** in large language models
 
 ## News
 

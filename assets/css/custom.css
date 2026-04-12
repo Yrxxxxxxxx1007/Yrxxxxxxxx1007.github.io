@@ -1,30 +1,42 @@
-/* Avatar: fixes theme bug (#header vs <header>) and caps to sidebar column (232px) */
+/* Avatar: fixes theme bug (#header vs <header>), size, and crop centering */
 header .image.avatar {
   margin: 0 auto 1em auto !important;
-  width: 100% !important;
+  width: 228px !important;
+  height: 228px !important;
   max-width: 232px !important;
+  max-height: 232px !important;
   display: block !important;
   box-sizing: border-box !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
 }
 
+/* object-fit crop: if the subject sits a bit left in the frame, shift focal point right */
 header .image.avatar img {
   display: block !important;
   width: 100% !important;
-  max-width: 228px !important;
-  height: auto !important;
-  padding: 2px !important;
-  border-radius: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  object-fit: cover !important;
+  object-position: 58% 48% !important;
   box-sizing: border-box !important;
 }
 
 @media print, screen and (max-width: 960px) {
-  header .image.avatar img {
-    max-width: 260px !important;
+  header .image.avatar {
+    width: 260px !important;
+    height: 260px !important;
+    max-width: min(92vw, 280px) !important;
+    max-height: min(92vw, 280px) !important;
   }
 }
 
 @media print, screen and (max-width: 480px) {
-  header .image.avatar img {
-    max-width: min(92vw, 260px) !important;
+  header .image.avatar {
+    width: min(88vw, 260px) !important;
+    height: min(88vw, 260px) !important;
   }
 }
