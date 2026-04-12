@@ -207,7 +207,7 @@ papertitle {
     }
 
     .image.avatar {
-      border-radius: 100%;
+      border-radius: 0;
     }
 
       .image.avatar:before {
@@ -215,7 +215,7 @@ papertitle {
       }
 
       .image.avatar img {
-        border-radius: 100%;
+        border-radius: 0;
         display: block;
         width: 100%;
         max-width: 228px;
@@ -506,7 +506,7 @@ footer {
 
 
    .image.avatar img {
-        border-radius: 100%;
+        border-radius: 0;
         width: 100%;
         max-width: 260px;
         height: auto;
@@ -565,7 +565,7 @@ footer {
   }
 
   .image.avatar img {
-      border-radius: 100%;
+      border-radius: 0;
       width: 100%;
       max-width: 220px;
       height: auto;

@@ -47,16 +47,12 @@
         <h1>{{ site.title }}</h1>
 
         {% if site.position %}
-        <position style="font-size:1.10rem;">{{ site.position }}</position>
-        <br>
+        <position class="header-position">{{ site.position }}</position>
         {% endif %}
         {% if site.affiliation %}
-        <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
-        <br>
+        <a class="header-affiliation" href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
         {% endif %}
 
-        <br>
-        <br>
         <div class="social-icons">
         {% if site.mailto_primary %}
         <a style="margin: 0 5px 0 0" href="mailto:{{ site.mailto_primary }}" title="{{ site.mailto_primary }}" rel="noopener">

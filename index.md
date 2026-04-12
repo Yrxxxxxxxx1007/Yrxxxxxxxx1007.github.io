@@ -28,7 +28,7 @@ I am an undergraduate student in the **School of Mathematics and Statistics** at
 - Large language models and reasoning
 - Chain-of-thought (CoT) distillation and multi-teacher learning
 - Model efficiency and knowledge transfer
-- The **measure of intelligence** — **measuring knowledge** in large language models
+- Measuring knowledge in large language models（The measure of intelligence）
 
 ## News
 

@@ -1,42 +1,106 @@
-/* Avatar: fixes theme bug (#header vs <header>), size, and crop centering */
+/* Avatar: header uses <header> (not #header); rectangular photo, aligned column */
 header .image.avatar {
-  margin: 0 auto 1em auto !important;
-  width: 228px !important;
-  height: 228px !important;
+  margin: 0 auto 0.85rem auto !important;
+  width: 100% !important;
   max-width: 232px !important;
-  max-height: 232px !important;
+  height: auto !important;
   display: block !important;
   box-sizing: border-box !important;
   padding: 0 !important;
-  overflow: hidden !important;
-  border-radius: 50% !important;
+  overflow: visible !important;
+  border-radius: 0 !important;
 }
 
-/* object-fit crop: if the subject sits a bit left in the frame, shift focal point right */
 header .image.avatar img {
   display: block !important;
   width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  object-fit: cover !important;
-  object-position: 58% 48% !important;
+  height: auto !important;
+  max-width: 232px !important;
+  margin: 0 auto !important;
+  padding: 2px !important;
   box-sizing: border-box !important;
+  border-radius: 0 !important;
+}
+
+/* Sidebar column: same width as photo, consistent type scale & spacing */
+header h1 {
+  max-width: 232px;
+  margin: 0 auto 0.45rem auto !important;
+  padding: 0 2px;
+  box-sizing: border-box;
+  line-height: 1.2 !important;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+header .header-position {
+  display: block;
+  max-width: 232px;
+  margin: 0 auto 0.35rem;
+  padding: 0 2px;
+  box-sizing: border-box;
+  line-height: 1.45;
+  font-size: 1.05rem;
+  color: inherit;
+}
+
+header .header-affiliation {
+  display: block;
+  max-width: 232px;
+  margin: 0 auto;
+  padding: 0 2px;
+  box-sizing: border-box;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+header .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem 0.35rem;
+  max-width: 232px;
+  margin: 1rem auto 0;
+  padding: 0 2px;
+  box-sizing: border-box;
+}
+
+header .social-icons a {
+  margin: 0 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  header .header-position,
+  header .header-affiliation {
+    color: inherit;
+  }
 }
 
 @media print, screen and (max-width: 960px) {
-  header .image.avatar {
-    width: 260px !important;
-    height: 260px !important;
-    max-width: min(92vw, 280px) !important;
-    max-height: min(92vw, 280px) !important;
+  header .image.avatar,
+  header .image.avatar img {
+    max-width: min(92vw, 260px) !important;
+  }
+
+  header h1,
+  header .header-position,
+  header .header-affiliation,
+  header .social-icons {
+    max-width: min(92vw, 260px);
   }
 }
 
 @media print, screen and (max-width: 480px) {
-  header .image.avatar {
-    width: min(88vw, 260px) !important;
-    height: min(88vw, 260px) !important;
+  header .image.avatar,
+  header .image.avatar img {
+    max-width: min(88vw, 240px) !important;
+  }
+
+  header h1,
+  header .header-position,
+  header .header-affiliation,
+  header .social-icons {
+    max-width: min(88vw, 240px);
   }
 }
