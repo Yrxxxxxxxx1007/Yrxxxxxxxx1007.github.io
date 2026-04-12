@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). My work focuses on large language models, chain-of-thought distillation, and reasoning.
+I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). My technical work centers on large language models, reasoning, and distillation; I am also interested in foundational questions about **how intelligence can be measured** and what would count as evidence for capabilities beyond pattern matching.
 
 ## Education
 
@@ -15,7 +15,7 @@ I am an undergraduate student in the **School of Mathematics and Statistics** at
 <div class="experience-timeline">
   <div class="exp-item">
     <div class="exp-meta">Oct 2025 – May 2026</div>
-    <div class="exp-body"><strong>Visiting Student</strong>, <a href="https://xjtuiair-urlab.github.io/portal/">Cognitive Architecture Group</a> (CAG Lab), Institute of AI & Robotics, Xi'an Jiaotong University. With Prof. Pengju Ren and Boran Zhao.</div>
+    <div class="exp-body"><strong>Visiting Student</strong>, <a href="https://xjtuiair-urlab.github.io/portal/">Cognitive Architecture Group</a> (CAG Lab), Institute of AI & Robotics, Xi'an Jiaotong University. Advised by <a href="https://scholar.xjtu.edu.cn/en/persons/pengju-ren/">Prof. Pengju Ren</a> and Boran Zhao.</div>
   </div>
   <div class="exp-item">
     <div class="exp-meta">Apr 2026 – present</div>
@@ -28,6 +28,9 @@ I am an undergraduate student in the **School of Mathematics and Statistics** at
 - Large language models and reasoning
 - Chain-of-thought (CoT) distillation and multi-teacher learning
 - Model efficiency and knowledge transfer
+- **Measuring intelligence:** before claiming strong AI / AGI, we need principled ways to *know* a system is that capable—yet in science, evidence is ultimately empirical, and we cannot settle “other minds”–style questions by proof alone (a thread that runs from Turing’s 1950 paper through classical AI debates and recent work on causality and evaluation).
+- **Beyond data fitting:** strong AI likely requires competences that interpolation on data cannot exhaust—notably **abstraction** and **causal** structure (themes in Pearl and related work, and in early AI’s ambitions vs. today’s scaling).
+- **Empirical design:** how to construct experiments and benchmarks that probe whether large models exhibit such competences **beyond** fitting, rather than only tracking loss on familiar distributions.
 
 ## News
 

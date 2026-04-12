@@ -169,8 +169,8 @@ papertitle {
 
       .image.avatar img {
         border-radius: 100%;
-        width: 72%;
-        padding: 20px;
+        width: 82%;
+        padding: 18px;
         // border: 1px solid #ddd;
         // padding: 3px;
         // box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
@@ -178,7 +178,7 @@ papertitle {
 
     #header .image.avatar {
       margin: 0 0 1em 0;
-      width: 14em;
+      width: 16.5em;
     }
 
 h3, h4, h5, h6 {
@@ -421,8 +421,8 @@ footer {
 
    .image.avatar img {
         border-radius: 100%;
-        width: 190px;
-        padding:20px;
+        width: 218px;
+        padding:18px;
       }
   #head1o2 {
     visibility: hidden;
@@ -477,8 +477,8 @@ footer {
 
   .image.avatar img {
       border-radius: 100%;
-      width: 155px;
-      padding:20px;
+      width: 178px;
+      padding:18px;
   }
   #head1o2 {
     visibility: hidden;
@@ -522,6 +522,7 @@ section h2 {
   margin-top: 1.85rem;
   margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
+  line-height: 1.25;
 }
 
 section > h2:first-child {
@@ -541,7 +542,7 @@ section > p:first-of-type {
   display: flex;
   gap: 1.75rem;
   align-items: flex-start;
-  padding: 0.7rem 0;
+  padding: 0.85rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
@@ -579,16 +580,16 @@ section > p:first-of-type {
 }
 
 .news-list li {
-  margin-bottom: 0.6rem;
-  line-height: 1.55;
+  margin-bottom: 0.65rem;
+  line-height: 1.62;
 }
 
 section ul:not(.news-list) {
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 section ul:not(.news-list) li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.45rem;
 }
 
 @media print, screen and (max-width: 640px) {
