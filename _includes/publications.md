@@ -4,15 +4,20 @@
 <ol class="bibliography">
 
 {% for link in site.data.publications.main %}
+{% assign ven = link.conference_short | downcase | strip %}
+{% assign has_teaser = false %}
+{% if link.image and link.image != '' %}
+  {% assign has_teaser = true %}
+{% endif %}
 
 <li>
 <div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
+  <div class="col-sm-3 abbr {% unless has_teaser %}pub-abbr-badge-only{% endunless %}" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    {% if has_teaser %}
     <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% if link.conference_short %} 
-    <abbr class="badge">{{ link.conference_short }}</abbr>
     {% endif %}
+    {% if link.conference_short %}
+    <abbr class="badge pub-venue-badge {% if ven == 'arxiv' %}badge-arxiv{% elsif ven == 'acl' %}badge-acl{% endif %}{% unless has_teaser %} badge-standalone{% endunless %}">{{ link.conference_short }}</abbr>
     {% endif %}
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">

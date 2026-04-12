@@ -73,3 +73,30 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+
+/* Venue badges (arXiv green, ACL navy) — also show without teaser image */
+.publications ol.bibliography li .abbr.pub-abbr-badge-only {
+  height: auto;
+  min-height: 2.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.publications ol.bibliography li .abbr.pub-abbr-badge-only abbr.pub-venue-badge.badge-standalone {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  border-radius: 0.25rem;
+}
+
+.publications ol.bibliography li .abbr abbr.pub-venue-badge.badge-arxiv {
+  background-color: #14854f !important;
+  color: #fff !important;
+}
+
+.publications ol.bibliography li .abbr abbr.pub-venue-badge.badge-acl {
+  background-color: #002d72 !important;
+  color: #fff !important;
+}
