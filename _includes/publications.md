@@ -11,16 +11,16 @@
 {% endif %}
 
 <li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr {% unless has_teaser %}pub-abbr-badge-only{% endunless %}" style="position: relative;padding-right: 15px;padding-left: 15px;">
+<div class="pub-row pub-row--aligned">
+  <div class="pub-venue-col {% if has_teaser %}pub-venue-col--with-teaser{% endif %}">
     {% if has_teaser %}
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" alt="" style="width=100;height=40%">
     {% endif %}
     {% if link.conference_short %}
-    <abbr class="badge pub-venue-badge {% if ven == 'arxiv' %}badge-arxiv{% elsif ven == 'acl' %}badge-acl{% endif %}{% unless has_teaser %} badge-standalone{% endunless %}">{{ link.conference_short }}</abbr>
+    <span class="venue-tag {% if ven == 'arxiv' %}venue-tag--arxiv{% elsif ven == 'acl' %}venue-tag--acl{% else %}venue-tag--default{% endif %}">{{ link.conference_short }}</span>
     {% endif %}
   </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+  <div class="pub-body-col">
       <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
       <div class="author">{{ link.authors }}</div>
       <div class="periodical"><em>{{ link.conference }}</em>
