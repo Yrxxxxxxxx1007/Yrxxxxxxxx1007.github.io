@@ -4,16 +4,24 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). My recent research focuses on large language models, chain-of-thought distillation, and reasoning.
+I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). My work focuses on large language models, chain-of-thought distillation, and reasoning.
 
 ## Education
 
-- **B.S. student**, School of Mathematics and Statistics, Xi'an Jiaotong University — present
+- **B.S.** (in progress), School of Mathematics and Statistics, Xi'an Jiaotong University
 
 ## Visiting & Research Experience
 
-- **Visiting Student**, [Cognitive Architecture Group](https://xjtuiair-urlab.github.io/portal/) (**CAG Lab**), Institute of AI & Robotics, Xi'an Jiaotong University, with Prof. Pengju Ren and Boran Zhao — Oct. 2025 to May 2026.
-- **Visiting Student**, [ENCODE Lab](https://westlake-encode-lab.github.io/), [Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Huan Wang](https://huanwang.tech/) (王欢) — since Apr. 12, 2026.
+<div class="experience-timeline">
+  <div class="exp-item">
+    <div class="exp-meta">Oct 2025 – May 2026</div>
+    <div class="exp-body"><strong>Visiting Student</strong>, <a href="https://xjtuiair-urlab.github.io/portal/">Cognitive Architecture Group</a> (CAG Lab), Institute of AI & Robotics, Xi'an Jiaotong University. With Prof. Pengju Ren and Boran Zhao.</div>
+  </div>
+  <div class="exp-item">
+    <div class="exp-meta">Apr 2026 – present</div>
+    <div class="exp-body"><strong>Visiting Student</strong>, <a href="https://westlake-encode-lab.github.io/">ENCODE Lab</a>, <a href="https://en.westlake.edu.cn/">Westlake University</a>. Advised by <a href="https://huanwang.tech/">Prof. Huan Wang</a>.</div>
+  </div>
+</div>
 
 ## Research Interests
 
@@ -23,8 +31,10 @@ I am an undergraduate student in the **School of Mathematics and Statistics** at
 
 ## News
 
-- **[Apr. 2026]** I joined the ENCODE Lab at Westlake University as a visiting student, working with Prof. Huan Wang.
-- **[Apr. 2026]** Our paper **MIND** was accepted to the **main conference (long papers)** of **ACL 2026**.
-- **[Jan. 2026]** Preprint *"The Whole Is Greater Than the Sum of Its Parts"* on multi-teacher CoT distillation is available on arXiv (see below).
+<ul class="news-list">
+  <li><strong>Apr 2026</strong> — Joined the ENCODE Lab at Westlake University as a visiting student, working with Prof. Huan Wang.</li>
+  <li><strong>Apr 2026</strong> — Paper <strong>MIND</strong> accepted to the main conference (long papers) of <strong>ACL 2026</strong>.</li>
+  <li><strong>Jan 2026</strong> — Preprint <em>&ldquo;The Whole Is Greater Than the Sum of Its Parts&rdquo;</em> on multi-teacher CoT distillation is available on arXiv (see below).</li>
+</ul>
 
 {% include_relative _includes/publications.md %}

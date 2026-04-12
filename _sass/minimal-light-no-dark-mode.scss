@@ -516,3 +516,90 @@ footer {
   display:none;
   font-family: monospace;
 }
+
+/* Site polish: section rhythm, experience timeline, news */
+section h2 {
+  margin-top: 1.85rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+section > h2:first-child {
+  margin-top: 0;
+}
+
+section > p:first-of-type {
+  line-height: 1.65;
+  color: #374151;
+}
+
+.experience-timeline {
+  margin: 0 0 0.25rem 0;
+}
+
+.exp-item {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.exp-item:last-child {
+  border-bottom: none;
+}
+
+.exp-meta {
+  flex: 0 0 10rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+  padding-top: 0.15rem;
+}
+
+.exp-body {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.exp-body strong {
+  font-weight: 600;
+  color: #043361;
+}
+
+.news-list {
+  margin: 0 0 0.5rem 0;
+  padding-left: 1.15rem;
+}
+
+.news-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.55;
+}
+
+section ul:not(.news-list) {
+  line-height: 1.55;
+}
+
+section ul:not(.news-list) li {
+  margin-bottom: 0.35rem;
+}
+
+@media print, screen and (max-width: 640px) {
+  .exp-item {
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.85rem 0;
+  }
+
+  .exp-meta {
+    flex: none;
+    padding-top: 0;
+  }
+}
