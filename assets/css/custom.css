@@ -126,3 +126,8 @@ header .social-icons a {
     max-width: min(88vw, 260px);
   }
 }
+
+/* Publications: arXiv venue badge — green */
+.publications ol.bibliography li .abbr abbr.badge-arxiv {
+  background-color: #15803d !important;
+}
