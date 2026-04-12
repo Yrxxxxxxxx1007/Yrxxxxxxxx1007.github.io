@@ -3,11 +3,14 @@ title: Ruixuan Yang
 position: Undergraduate Student
 affiliation: Xi'an Jiaotong University, School of Mathematics and Statistics
 affiliation_link: https://math.xjtu.edu.cn/
-email: ruixuanyang1113 (at) gmail.com · yangruixuan (at) stu.xjtu.edu.cn
+
+# Email (shown as envelope icons in header; plain addresses optional for SEO)
+mailto_primary: ruixuanyang1113@gmail.com
+mailto_secondary: yangruixuan@stu.xjtu.edu.cn
 
 # Search Engine Optimization (SEO)
 keywords: Ruixuan Yang, Xi'an Jiaotong University, machine learning, large language models
-description: Academic homepage of Ruixuan Yang — undergraduate at XJTU; research on LLMs, reasoning, distillation, and foundations of measuring intelligence.
+description: Academic homepage of Ruixuan Yang — XJTU; LLMs, reasoning, distillation, evaluation of intelligence.
 canonical: https://yrxxxxxxxx1007.github.io/
 
 # Links 

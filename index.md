@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). My technical work centers on large language models, reasoning, and distillation; I am also interested in foundational questions about **how intelligence can be measured** and what would count as evidence for capabilities beyond pattern matching.
+I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). I work on large language models, reasoning, and distillation, and I think about how we can **evaluate** whether systems show intelligence beyond pattern matching.
 
 ## Education
 
@@ -28,16 +28,15 @@ I am an undergraduate student in the **School of Mathematics and Statistics** at
 - Large language models and reasoning
 - Chain-of-thought (CoT) distillation and multi-teacher learning
 - Model efficiency and knowledge transfer
-- **Measuring intelligence:** before claiming strong AI / AGI, we need principled ways to *know* a system is that capable—yet in science, evidence is ultimately empirical, and we cannot settle “other minds”–style questions by proof alone (a thread that runs from Turing’s 1950 paper through classical AI debates and recent work on causality and evaluation).
-- **Beyond data fitting:** strong AI likely requires competences that interpolation on data cannot exhaust—notably **abstraction** and **causal** structure (themes in Pearl and related work, and in early AI’s ambitions vs. today’s scaling).
-- **Empirical design:** how to construct experiments and benchmarks that probe whether large models exhibit such competences **beyond** fitting, rather than only tracking loss on familiar distributions.
+- **Evaluation & “measure of intelligence”:** empirical limits of knowing strong AI/AGI (Turing-style questions; abstraction, causality, beyond pure fitting)
+- **Experiments & benchmarks** that probe competences beyond interpolation on training-like data
 
 ## News
 
 <ul class="news-list">
   <li><strong>Apr 2026</strong> — Joined the ENCODE Lab at Westlake University as a visiting student, working with Prof. Huan Wang.</li>
   <li><strong>Apr 2026</strong> — Paper <strong>MIND</strong> accepted to the main conference (long papers) of <strong>ACL 2026</strong>.</li>
-  <li><strong>Jan 2026</strong> — Preprint <em>&ldquo;The Whole Is Greater Than the Sum of Its Parts&rdquo;</em> on multi-teacher CoT distillation is available on arXiv (see below).</li>
+  <li><strong>Jan 2026</strong> — Preprint <em>&ldquo;The Whole Is Greater Than the Sum of Its Parts&rdquo;</em> on multi-teacher CoT distillation on arXiv.</li>
 </ul>
 
 {% include_relative _includes/publications.md %}

@@ -216,16 +216,20 @@ papertitle {
 
       .image.avatar img {
         border-radius: 100%;
-        width: 82%;
-        padding: 18px;
+        width: 100%;
+        max-width: 222px;
+        height: auto;
+        padding: 4px;
+        box-sizing: border-box;
         // border: 1px solid #ddd;
         // padding: 3px;
         // box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
       }
 
     #header .image.avatar {
-      margin: 0 0 1em 0;
-      width: 16.5em;
+      margin: 0 auto 1em auto;
+      width: 100%;
+      max-width: 230px;
     }
 
 h3, h4, h5, h6 {
@@ -500,8 +504,11 @@ footer {
 
    .image.avatar img {
         border-radius: 100%;
-        width: 218px;
-        padding:18px;
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        padding: 6px;
+        box-sizing: border-box;
       }
   #head1o2 {
     visibility: hidden;
@@ -556,8 +563,11 @@ footer {
 
   .image.avatar img {
       border-radius: 100%;
-      width: 178px;
-      padding:18px;
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      padding: 6px;
+      box-sizing: border-box;
   }
   #head1o2 {
     visibility: hidden;

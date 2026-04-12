@@ -9,5 +9,5 @@ main:
   - title: "MIND: From Passive Mimicry to Active Reasoning through Capability-Aware Multi-Perspective CoT Distillation"
     authors: J. Cui, J. Guo, J. Zhou, <strong>Ruixuan Yang</strong>, J. Lu, J. Xu, J. Song, B. Zhao, P. Ren
     conference_short: ACL
-    conference: Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, Volume 1 (Long Papers), 2026. Main Conference (Long Paper).
+    conference: The 64th Annual Meeting of the Association for Computational Linguistics (ACL), 2026.
     pdf: https://arxiv.org/pdf/2601.03717.pdf
