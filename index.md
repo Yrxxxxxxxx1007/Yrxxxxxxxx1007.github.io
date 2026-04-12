@@ -26,9 +26,9 @@ I am an undergraduate student in the **School of Mathematics and Statistics** at
 ## Research Interests
 
 - Large language models and reasoning
-- Chain-of-thought (CoT) distillation and multi-teacher learning
+- Chain-of-thought (CoT) distillation
 - Model efficiency and knowledge transfer
-- The **measure of intelligence** — **measuring knowledge** in large language models
+- The measure of intelligence — measuring knowledge in large language models
 
 ## News
 
