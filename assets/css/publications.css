@@ -38,7 +38,17 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
 
-.publications ol.bibliography li { min-height: 0; margin-bottom: 1rem; }
+.publications ol.bibliography li { min-height: 110px; margin-bottom: 0.5rem; }
+
+.publications ol.bibliography li .abbr { height: 8rem; margin-bottom: 0.5rem; }
+
+.publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem; position: absolute; top: 8px; left: 16px; }
+
+.publications ol.bibliography li .abbr abbr a { color: white; }
+
+.publications ol.bibliography li .abbr abbr a:hover { text-decoration: none; }
+
+.publications ol.bibliography li .abbr .award { color: var(--global-theme-color) !important; border: 1px solid var(--global-theme-color); }
 
 .publications ol.bibliography li .title { font-weight: bolder; }
 
@@ -70,107 +80,3 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
-
-/* Flex row: left tag column aligns with title on the right */
-.publications ol.bibliography li .pub-row--aligned {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 1rem 1.35rem;
-}
-
-.publications ol.bibliography li .pub-venue-col {
-  flex: 0 0 5.25rem;
-  width: 5.25rem;
-  min-width: 5.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.2rem 0 0 0;
-  margin: 0;
-  position: relative;
-}
-
-.publications ol.bibliography li .pub-body-col {
-  flex: 1 1 auto;
-  min-width: 0;
-  padding: 0 !important;
-  margin: 0;
-  width: auto !important;
-  max-width: none !important;
-}
-
-.publications ol.bibliography li .venue-tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.4rem 0.55rem;
-  line-height: 1.15;
-  letter-spacing: 0.055em;
-  text-transform: uppercase;
-  color: #fff !important;
-  border-radius: 0.22rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
-  white-space: nowrap;
-}
-
-/* arXiv: official-style burgundy — clearly not a conference badge */
-.publications ol.bibliography li .venue-tag--arxiv {
-  background: #b31b1b !important;
-}
-
-/* ACL: saturated blue — distinct from arXiv red */
-.publications ol.bibliography li .venue-tag--acl {
-  background: #1e40af !important;
-}
-
-.publications ol.bibliography li .venue-tag--default {
-  background: var(--global-theme-color) !important;
-}
-
-/* Teaser + tag: badge overlays top-left of figure */
-.publications ol.bibliography li .pub-venue-col--with-teaser {
-  flex: 0 0 auto;
-  width: auto;
-  min-width: 0;
-  max-width: 280px;
-}
-
-.publications ol.bibliography li .pub-venue-col--with-teaser .venue-tag {
-  position: absolute;
-  top: 10px;
-  left: 12px;
-  z-index: 2;
-}
-
-@media print, screen and (max-width: 960px) {
-  .publications ol.bibliography li .pub-row--aligned {
-    align-items: flex-start !important;
-  }
-}
-
-@media print, screen and (max-width: 560px) {
-  .publications ol.bibliography li .pub-row--aligned {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.65rem;
-  }
-
-  .publications ol.bibliography li .pub-venue-col {
-    flex: none;
-    width: auto;
-    min-width: 0;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-/* Theme sets .pub-row { display:block } under 480px — keep flex for bibliography */
-@media print, screen and (max-width: 480px) {
-  .publications ol.bibliography li .pub-row--aligned {
-    display: flex !important;
-    flex-direction: column;
-    align-items: stretch !important;
-  }
-}

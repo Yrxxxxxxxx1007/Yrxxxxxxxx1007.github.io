@@ -4,23 +4,18 @@
 <ol class="bibliography">
 
 {% for link in site.data.publications.main %}
-{% assign ven = link.conference_short | downcase | strip %}
-{% assign has_teaser = false %}
-{% if link.image and link.image != '' %}
-  {% assign has_teaser = true %}
-{% endif %}
 
 <li>
-<div class="pub-row pub-row--aligned">
-  <div class="pub-venue-col {% if has_teaser %}pub-venue-col--with-teaser{% endif %}">
-    {% if has_teaser %}
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" alt="" style="width=100;height=40%">
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    {% if link.image %} 
+    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+    {% if link.conference_short %} 
+    <abbr class="badge">{{ link.conference_short }}</abbr>
     {% endif %}
-    {% if link.conference_short %}
-    <span class="venue-tag {% if ven == 'arxiv' %}venue-tag--arxiv{% elsif ven == 'acl' %}venue-tag--acl{% else %}venue-tag--default{% endif %}">{{ link.conference_short }}</span>
     {% endif %}
   </div>
-  <div class="pub-body-col">
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
       <div class="author">{{ link.authors }}</div>
       <div class="periodical"><em>{{ link.conference }}</em>
