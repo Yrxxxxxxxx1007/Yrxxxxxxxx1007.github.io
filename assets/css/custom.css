@@ -1,57 +1,78 @@
-/* Avatar: header uses <header> (not #header); rectangular photo, aligned column */
+/* Sidebar width: slightly wider than theme (232px) so the photo reads a bit larger */
+:root {
+  --sidebar-col: 252px;
+  --sidebar-radius: 12px;
+}
+
+@media print, screen and (min-width: 961px) {
+  header {
+    width: var(--sidebar-col) !important;
+  }
+
+  footer {
+    width: var(--sidebar-col) !important;
+  }
+
+  /* Keep total content width aligned with .wrapper (960px): 252 + 630 = 882 */
+  section {
+    width: 630px !important;
+  }
+}
+
+/* Avatar: rounded rect, fills sidebar column */
 header .image.avatar {
-  margin: 0 auto 0.85rem auto !important;
+  margin: 0 auto 0.9rem auto !important;
   width: 100% !important;
-  max-width: 232px !important;
+  max-width: var(--sidebar-col) !important;
   height: auto !important;
   display: block !important;
   box-sizing: border-box !important;
   padding: 0 !important;
-  overflow: visible !important;
-  border-radius: 0 !important;
+  overflow: hidden !important;
+  border-radius: var(--sidebar-radius) !important;
 }
 
 header .image.avatar img {
   display: block !important;
   width: 100% !important;
   height: auto !important;
-  max-width: 232px !important;
+  max-width: var(--sidebar-col) !important;
   margin: 0 auto !important;
-  padding: 2px !important;
+  padding: 0 !important;
   box-sizing: border-box !important;
-  border-radius: 0 !important;
+  border-radius: var(--sidebar-radius) !important;
 }
 
-/* Sidebar column: same width as photo, consistent type scale & spacing */
+/* Sidebar column: same width as photo, type tuned to column size */
 header h1 {
-  max-width: 232px;
-  margin: 0 auto 0.45rem auto !important;
-  padding: 0 2px;
+  max-width: var(--sidebar-col);
+  margin: 0 auto 0.5rem auto !important;
+  padding: 0;
   box-sizing: border-box;
-  line-height: 1.2 !important;
-  font-size: 26px;
+  line-height: 1.22 !important;
+  font-size: 27px;
   font-weight: 500;
 }
 
 header .header-position {
   display: block;
-  max-width: 232px;
-  margin: 0 auto 0.35rem;
-  padding: 0 2px;
+  max-width: var(--sidebar-col);
+  margin: 0 auto 0.38rem;
+  padding: 0;
   box-sizing: border-box;
-  line-height: 1.45;
-  font-size: 1.05rem;
+  line-height: 1.48;
+  font-size: 1.07rem;
   color: inherit;
 }
 
 header .header-affiliation {
   display: block;
-  max-width: 232px;
+  max-width: var(--sidebar-col);
   margin: 0 auto;
-  padding: 0 2px;
+  padding: 0;
   box-sizing: border-box;
-  line-height: 1.45;
-  font-size: 0.95rem;
+  line-height: 1.48;
+  font-size: 0.97rem;
 }
 
 header .social-icons {
@@ -59,10 +80,10 @@ header .social-icons {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.25rem 0.35rem;
-  max-width: 232px;
-  margin: 1rem auto 0;
-  padding: 0 2px;
+  gap: 0.3rem 0.4rem;
+  max-width: var(--sidebar-col);
+  margin: 1.05rem auto 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -80,27 +101,28 @@ header .social-icons a {
 @media print, screen and (max-width: 960px) {
   header .image.avatar,
   header .image.avatar img {
-    max-width: min(92vw, 260px) !important;
+    max-width: min(92vw, 272px) !important;
+    border-radius: var(--sidebar-radius) !important;
   }
 
   header h1,
   header .header-position,
   header .header-affiliation,
   header .social-icons {
-    max-width: min(92vw, 260px);
+    max-width: min(92vw, 272px);
   }
 }
 
 @media print, screen and (max-width: 480px) {
   header .image.avatar,
   header .image.avatar img {
-    max-width: min(88vw, 240px) !important;
+    max-width: min(88vw, 260px) !important;
   }
 
   header h1,
   header .header-position,
   header .header-affiliation,
   header .social-icons {
-    max-width: min(88vw, 240px);
+    max-width: min(88vw, 260px);
   }
 }
