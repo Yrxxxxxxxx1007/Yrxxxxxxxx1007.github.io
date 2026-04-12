@@ -216,20 +216,23 @@ papertitle {
 
       .image.avatar img {
         border-radius: 100%;
+        display: block;
         width: 100%;
-        max-width: 222px;
+        max-width: 228px;
         height: auto;
-        padding: 4px;
+        padding: 2px;
         box-sizing: border-box;
         // border: 1px solid #ddd;
         // padding: 3px;
         // box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
       }
 
-    #header .image.avatar {
+    /* Theme used #header but layout has <header> without id — must use header */
+    header .image.avatar {
       margin: 0 auto 1em auto;
       width: 100%;
-      max-width: 230px;
+      max-width: 232px;
+      display: block;
     }
 
 h3, h4, h5, h6 {
