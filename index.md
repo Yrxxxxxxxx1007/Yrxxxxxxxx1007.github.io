@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). I work on large language models, reasoning, and distillation. **Currently I am thinking about** how we might evaluate whether systems show intelligence beyond pattern matching.
+I am an undergraduate student in the **School of Mathematics and Statistics** at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). I work on large language models, reasoning, and distillation.
 
 ## Education
 
