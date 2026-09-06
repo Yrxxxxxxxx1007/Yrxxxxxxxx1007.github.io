@@ -1,0 +1,4 @@
+al-folio by Maruan Al-Shedivat, MIT License.
+https://github.com/alshedivat/al-folio
+Theme CSS obtained from https://alshedivat.github.io/al-folio/ on 2026-09-06.
+The upstream theme styles are preserved. Local adaptations are in assets/css/custom.css.

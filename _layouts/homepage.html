@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#151719" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#1c1c1d" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="{{ site.canonical }}">
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Ruixuan Yang | Academic Homepage">
@@ -23,8 +23,10 @@
     <meta name="twitter:description" content="{{ site.description | escape }}">
     <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/png">
     <link rel="icon" media="(prefers-color-scheme: dark)" href="{{ site.favicon_dark | relative_url }}" type="image/png">
-    <link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.github.build_revision | default: 'editorial-20260906' }}">
+    <link rel="preload" href="{{ '/assets/fonts/roboto-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{ '/assets/vendor/al-folio/tailwind.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/vendor/al-folio/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.github.build_revision | default: 'al-folio-20260906' }}">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,36 +67,32 @@
     }
     </script>
   </head>
-  <body>
+  <body class="fixed-top-nav">
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="page-shell">
-      <header class="profile">
-        <div class="profile-copy">
-          <p class="profile-role">{{ site.position }}</p>
-          <h1>{{ site.title }}</h1>
-          <a class="profile-university" href="{{ site.affiliation_link }}">Xi'an Jiaotong University</a>
-          <p class="profile-school">School of Mathematics and Statistics</p>
+    <header>
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" aria-label="Main navigation">
+        <div class="container">
+          <a class="navbar-brand site-name" href="#about"><strong>Ruixuan</strong> Yang</a>
+          <ul class="navbar-nav navbar-menu-list">
+            <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research">research</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">news</a></li>
+            <li class="nav-item"><a class="nav-link" href="#publications">publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">experience</a></li>
+          </ul>
         </div>
-        <img class="portrait" src="{{ site.avatar | relative_url }}" alt="Ruixuan Yang" width="1280" height="960" fetchpriority="high" decoding="async">
-        <div class="profile-links">
-          <a class="profile-email" href="mailto:{{ site.mailto_primary }}">{{ site.mailto_primary }}</a>
-          <a href="mailto:{{ site.mailto_secondary }}" aria-label="University email: {{ site.mailto_secondary }}">University email</a>
-          <a href="{{ site.google_scholar }}" rel="me">Google Scholar <span aria-hidden="true">↗</span></a>
-          <a href="{{ site.github_link }}" rel="me">GitHub <span aria-hidden="true">↗</span></a>
-          {% if site.cv_link %}<a href="{{ site.cv_link }}">CV <span aria-hidden="true">↗</span></a>{% endif %}
-        </div>
-      </header>
-      <nav class="section-nav" aria-label="On this page">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#news">News</a>
-        <a href="#experience">Experience</a>
       </nav>
-      <main id="main">
+    </header>
+    <main id="main" class="container mt-5">
+      <div class="post">
         {{ content }}
-        <footer class="site-footer"><span>© {{ site.time | date: '%Y' }} Ruixuan Yang</span><a href="mailto:{{ site.mailto_primary }}">Get in touch <span aria-hidden="true">↗</span></a></footer>
-      </main>
-    </div>
+      </div>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <span>© {{ site.time | date: '%Y' }} Ruixuan Yang</span>
+        <span>Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.</span>
+      </div>
+    </footer>
   </body>
 </html>

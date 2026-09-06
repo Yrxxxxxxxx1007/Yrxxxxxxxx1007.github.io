@@ -1,21 +1,26 @@
-<section id="publications" aria-labelledby="publications-heading">
-  <div class="section-heading"><h2 id="publications-heading">Publications</h2><p class="publication-note"><sup>*</sup> Co-first authors</p></div>
-  <div class="section-content publication-list">
+<section id="publications" class="publications content-section" aria-labelledby="publications-heading">
+  <div class="publications-heading"><h2 id="publications-heading">publications</h2><p class="contribution-note"><sup>*</sup> Co-first authors</p></div>
+  <ol class="bibliography">
     {% for paper in site.data.publications.main %}
-    <article id="{{ paper.id }}" class="publication" aria-labelledby="{{ paper.id }}-title">
-      <a class="publication-image" href="{{ paper.page }}" tabindex="-1" aria-hidden="true"><img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" loading="lazy" decoding="async"></a>
-      <div class="publication-body">
-        <div class="publication-meta"><span class="venue">{{ paper.venue }}</span><span class="publication-status">{{ paper.status }}</span></div>
-        <h3 id="{{ paper.id }}-title"><a href="{{ paper.page }}">{{ paper.title | escape }}</a></h3>
-        <p class="authors">{% for author in paper.authors %}{% if author.name == site.title %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.equal %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
-        <p class="publication-summary">{{ paper.summary }}</p>
-        <div class="paper-links">
-          <a href="{{ paper.pdf }}" aria-label="PDF of {{ paper.id | upcase }}">PDF <span aria-hidden="true">↗</span></a>
-          <a href="{{ paper.page }}" aria-label="{{ paper.id | upcase }} paper page">{% if paper.arxiv %}ACL Anthology{% else %}arXiv{% endif %} <span aria-hidden="true">↗</span></a>
-          {% if paper.arxiv %}<a href="{{ paper.arxiv }}" aria-label="{{ paper.id | upcase }} on arXiv">arXiv <span aria-hidden="true">↗</span></a>{% endif %}
+    <li>
+      <article id="{{ paper.id }}" class="row publication-row" aria-labelledby="{{ paper.id }}-title">
+        <div class="col-sm-3 abbr">
+          <a href="{{ paper.page }}" class="figure-link" tabindex="-1" aria-hidden="true"><img src="{{ paper.image | relative_url }}" class="preview paper-figure" alt="{{ paper.image_alt | escape }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" loading="lazy" decoding="async"></a>
+          <abbr class="badge rounded venue-badge">{{ paper.venue }}</abbr>
         </div>
-      </div>
-    </article>
+        <div class="col-sm-9">
+          <h3 id="{{ paper.id }}-title" class="title"><a href="{{ paper.page }}">{{ paper.title | escape }}</a></h3>
+          <div class="author">{% for author in paper.authors %}{% if author.name == site.title %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.equal %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+          <div class="periodical"><em>{{ paper.conference }}</em>, {{ paper.year }}. <span class="paper-status">{{ paper.status }}</span></div>
+          <p class="paper-summary">{{ paper.summary }}</p>
+          <div class="links">
+            <a href="{{ paper.pdf }}" class="btn btn-sm z-depth-0" aria-label="PDF of {{ paper.id | upcase }}">PDF</a>
+            <a href="{{ paper.page }}" class="btn btn-sm z-depth-0" aria-label="{{ paper.id | upcase }} paper page">{% if paper.arxiv %}ACL Anthology{% else %}arXiv{% endif %}</a>
+            {% if paper.arxiv %}<a href="{{ paper.arxiv }}" class="btn btn-sm z-depth-0" aria-label="{{ paper.id | upcase }} on arXiv">arXiv</a>{% endif %}
+          </div>
+        </div>
+      </article>
+    </li>
     {% endfor %}
-  </div>
+  </ol>
 </section>

@@ -19,4 +19,6 @@ GitHub Pages builds the site with Jekyll from the main branch. The Validate home
 
 ## Credits
 
-Originally based on [Minimal Light](https://github.com/yaoyao-liu/minimal-light) by Yaoyao Liu. The original [license](LICENSE) is retained.
+The visual design uses [al-folio](https://github.com/alshedivat/al-folio) by Maruan Al-Shedivat. Its upstream styles and MIT license are preserved in assets/vendor/al-folio. The content is rendered with the existing Jekyll setup, with local adaptations in assets/css/custom.css. Roboto is self-hosted with its SIL Open Font License.
+
+The repository was originally based on [Minimal Light](https://github.com/yaoyao-liu/minimal-light) by Yaoyao Liu; its original [license](LICENSE) is retained.
