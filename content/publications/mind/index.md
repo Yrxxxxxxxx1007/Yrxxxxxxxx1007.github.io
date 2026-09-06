@@ -10,6 +10,16 @@ authors:
 - Jiangcheng Song
 - Boran Zhao
 - Pengju Ren
+author_notes:
+- Equal contribution
+- Equal contribution
+- ''
+- ''
+- ''
+- ''
+- ''
+- ''
+- ''
 date: '2026-01-07'
 publishDate: '2026-01-07'
 publication_types:

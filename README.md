@@ -12,7 +12,7 @@ Built with the original [Hugo Blox Academic CV](https://github.com/HugoBlox/hugo
 - `data/publications.yaml`: structured publication data for the homepage metadata.
 - `config/_default/params.yaml`: theme and site metadata.
 
-Jin Cui and Jiaqi Guo are equal first authors of COMPACT. Ruixuan Yang follows them and precedes Jiepeng Zhou. The MIND author order follows ACL Anthology.
+Jin Cui and Jiaqi Guo are equal first authors of COMPACT. Ruixuan Yang follows them and precedes Jiepeng Zhou. MIND follows the author order and equal-contribution markers in the [ACL Anthology PDF](https://aclanthology.org/2026.acl-long.2020.pdf): Jin Cui and Jiaqi Guo share equal contribution.
 
 ## Develop and publish
 
