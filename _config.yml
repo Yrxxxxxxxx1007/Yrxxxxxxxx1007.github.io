@@ -1,5 +1,8 @@
-# Basic Information 
+# Basic Information
 title: Ruixuan Yang
+url: https://yrxxxxxxxx1007.github.io
+baseurl: ""
+lang: en
 position: Undergraduate Student
 affiliation: Xi'an Jiaotong University, School of Mathematics and Statistics
 affiliation_link: https://math.xjtu.edu.cn/
@@ -9,15 +12,15 @@ mailto_primary: ruixuanyang1113@gmail.com
 mailto_secondary: yangruixuan@stu.xjtu.edu.cn
 
 # Search Engine Optimization (SEO)
-keywords: Ruixuan Yang, Xi'an Jiaotong University, machine learning, large language models
-description: Academic homepage of Ruixuan Yang — XJTU; LLMs, reasoning, distillation, evaluation of intelligence.
+keywords: Ruixuan Yang, XJTU, large language models, model efficiency, token pruning, knowledge distillation, on-policy distillation, post-training, COMPACT, MIND
+description: Ruixuan Yang is an undergraduate at XJTU researching efficient language models, token pruning, and post-training through on-policy and reasoning distillation.
 canonical: https://yrxxxxxxxx1007.github.io/
 
-# Links 
+# Links
 google_scholar: https://scholar.google.com/citations?hl=en&user=vfkTQcwAAAAJ
 github_link: https://github.com/Yrxxxxxxxx1007
 
-# Images (e.g., your profile picture and your website's favicon) 
+# Images (e.g., your profile picture and your website's favicon)
 avatar: ./assets/img/avatar.jpg
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
@@ -45,3 +48,4 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - html_source_file/
+  - .github/

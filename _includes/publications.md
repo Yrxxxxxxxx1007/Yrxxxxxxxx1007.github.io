@@ -1,52 +1,22 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
-
-<div class="publications">
-<ol class="bibliography">
-
-{% for link in site.data.publications.main %}
-
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% if link.conference_short %}
-    {% assign _short = link.conference_short | strip | downcase %}
-    <abbr class="badge{% if _short == 'arxiv' %} badge-arxiv{% endif %}">{{ link.conference_short }}</abbr>
-    {% endif %}
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
+<section id="publications" aria-labelledby="publications-heading">
+  <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="publications-heading">Publications</h2></div>
+  <p class="publication-note"><sup>*</sup> Equal contribution / co-first authors. My name is highlighted in bold.</p>
+  <div class="publication-list">
+    {% for paper in site.data.publications.main %}
+    <article id="{{ paper.id }}" class="publication" aria-labelledby="{{ paper.id }}-title">
+      <a class="publication-image" href="{{ paper.page }}" tabindex="-1" aria-hidden="true"><img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" loading="lazy" decoding="async"></a>
+      <div class="publication-body">
+        <div class="publication-meta"><span class="venue">{{ paper.venue }}</span><span class="publication-status">{{ paper.status }}</span></div>
+        <h3 id="{{ paper.id }}-title"><a href="{{ paper.page }}">{{ paper.title | escape }}</a></h3>
+        <p class="authors">{% for author in paper.authors %}{% if author.name == site.title %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.equal %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+        <p class="publication-summary">{{ paper.summary }}</p>
+        <div class="paper-links">
+          <a href="{{ paper.pdf }}" aria-label="PDF of {{ paper.id | upcase }}">PDF <span aria-hidden="true">↗</span></a>
+          <a href="{{ paper.page }}" aria-label="{{ paper.id | upcase }} paper page">{% if paper.arxiv %}ACL Anthology{% else %}arXiv{% endif %} <span aria-hidden="true">↗</span></a>
+          {% if paper.arxiv %}<a href="{{ paper.arxiv }}" aria-label="{{ paper.id | upcase }} on arXiv">arXiv <span aria-hidden="true">↗</span></a>{% endif %}
+        </div>
       </div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
-      {% endif %}
-    </div>
+    </article>
+    {% endfor %}
   </div>
-</div>
-</li>
-<br>
-
-{% endfor %}
-
-</ol>
-</div>
+</section>
