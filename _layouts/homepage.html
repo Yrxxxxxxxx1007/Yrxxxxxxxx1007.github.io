@@ -24,7 +24,7 @@
     <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/png">
     <link rel="icon" media="(prefers-color-scheme: dark)" href="{{ site.favicon_dark | relative_url }}" type="image/png">
     <link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.github.build_revision | default: 'editorial-20260906' }}">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
