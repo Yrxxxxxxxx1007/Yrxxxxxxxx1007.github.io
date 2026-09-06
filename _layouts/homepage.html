@@ -8,8 +8,8 @@
     <meta name="author" content="{{ site.title | escape }}">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" content="#fafbfd" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#111820" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#151719" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="{{ site.canonical }}">
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Ruixuan Yang | Academic Homepage">
@@ -23,6 +23,7 @@
     <meta name="twitter:description" content="{{ site.description | escape }}">
     <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/png">
     <link rel="icon" media="(prefers-color-scheme: dark)" href="{{ site.favicon_dark | relative_url }}" type="image/png">
+    <link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     <script type="application/ld+json">
     {
@@ -68,27 +69,28 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="page-shell">
       <header class="profile">
-        <img class="portrait" src="{{ site.avatar | relative_url }}" alt="Ruixuan Yang" width="1280" height="960" fetchpriority="high" decoding="async">
-        <h1>{{ site.title }}</h1>
-        <p class="profile-role">{{ site.position }}</p>
-        <a class="profile-university" href="{{ site.affiliation_link }}">Xi'an Jiaotong University</a>
-        <p class="profile-school">School of Mathematics<br>and Statistics</p>
-        <div class="contact-links">
-          <a href="mailto:{{ site.mailto_primary }}">{{ site.mailto_primary }}</a>
-          <a href="mailto:{{ site.mailto_secondary }}">{{ site.mailto_secondary }}</a>
+        <div class="profile-copy">
+          <p class="profile-role">{{ site.position }}</p>
+          <h1>{{ site.title }}</h1>
+          <a class="profile-university" href="{{ site.affiliation_link }}">Xi'an Jiaotong University</a>
+          <p class="profile-school">School of Mathematics and Statistics</p>
         </div>
+        <img class="portrait" src="{{ site.avatar | relative_url }}" alt="Ruixuan Yang" width="1280" height="960" fetchpriority="high" decoding="async">
         <div class="profile-links">
+          <a class="profile-email" href="mailto:{{ site.mailto_primary }}">{{ site.mailto_primary }}</a>
+          <a href="mailto:{{ site.mailto_secondary }}" aria-label="University email: {{ site.mailto_secondary }}">University email</a>
           <a href="{{ site.google_scholar }}" rel="me">Google Scholar <span aria-hidden="true">↗</span></a>
           <a href="{{ site.github_link }}" rel="me">GitHub <span aria-hidden="true">↗</span></a>
           {% if site.cv_link %}<a href="{{ site.cv_link }}">CV <span aria-hidden="true">↗</span></a>{% endif %}
         </div>
-        <nav class="section-nav" aria-label="On this page">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#experience">Experience</a>
-        </nav>
       </header>
+      <nav class="section-nav" aria-label="On this page">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#news">News</a>
+        <a href="#experience">Experience</a>
+      </nav>
       <main id="main">
         {{ content }}
         <footer class="site-footer"><span>© {{ site.time | date: '%Y' }} Ruixuan Yang</span><a href="mailto:{{ site.mailto_primary }}">Get in touch <span aria-hidden="true">↗</span></a></footer>

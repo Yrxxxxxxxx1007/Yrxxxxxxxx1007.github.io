@@ -1,7 +1,6 @@
 <section id="publications" aria-labelledby="publications-heading">
-  <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="publications-heading">Publications</h2></div>
-  <p class="publication-note"><sup>*</sup> Equal contribution / co-first authors. My name is highlighted in bold.</p>
-  <div class="publication-list">
+  <div class="section-heading"><h2 id="publications-heading">Publications</h2><p class="publication-note"><sup>*</sup> Co-first authors</p></div>
+  <div class="section-content publication-list">
     {% for paper in site.data.publications.main %}
     <article id="{{ paper.id }}" class="publication" aria-labelledby="{{ paper.id }}-title">
       <a class="publication-image" href="{{ paper.page }}" tabindex="-1" aria-hidden="true"><img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" loading="lazy" decoding="async"></a>

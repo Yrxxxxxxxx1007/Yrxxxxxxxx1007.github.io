@@ -1,0 +1,1 @@
+Self-hosted Latin subsets of Inter and Source Serif 4, obtained from the official Google Fonts distribution. Both fonts are licensed under SIL Open Font License 1.1; the license files are included alongside the assets. Normal style, variable weights 400-600.
