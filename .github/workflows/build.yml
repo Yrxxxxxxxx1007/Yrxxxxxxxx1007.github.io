@@ -1,25 +1,63 @@
-name: Validate homepage
+name: Build and deploy homepage
 
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: homepage-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build with the GitHub Pages environment
-        uses: actions/jekyll-build-pages@v1
+      - uses: actions/setup-node@v4
         with:
-          source: ./
-          destination: ./_site
-      - name: Save the built website for preview
+          node-version: '22'
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.2'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '10.14.0'
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.162.0'
+          extended: true
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile --ignore-scripts
+      - name: Build Hugo website
+        env:
+          HUGO_ENVIRONMENT: production
+        run: pnpm build
+      - name: Save preview
         uses: actions/upload-artifact@v4
         with:
           name: homepage-preview
-          path: _site/
+          path: public/
           retention-days: 7
+      - name: Prepare Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

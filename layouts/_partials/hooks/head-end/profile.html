@@ -1,0 +1,29 @@
+{{ if .IsHome }}
+{{ $base := site.Home.Permalink }}
+{{ $personID := printf "%s#person" $base }}
+{{ $person := dict "@type" "Person" "@id" $personID "name" "Ruixuan Yang" "givenName" "Ruixuan" "familyName" "Yang" "url" $base "image" (printf "%sassets/img/avatar.jpg" $base) "jobTitle" "Undergraduate Student" "affiliation" (dict "@type" "CollegeOrUniversity" "name" "Xi'an Jiaotong University" "url" "https://www.xjtu.edu.cn/") "knowsAbout" (slice "Large language models" "Model efficiency" "Token pruning" "Knowledge distillation" "Post-training" "On-policy distillation" "Chain-of-thought reasoning") "sameAs" (slice "https://scholar.google.com/citations?hl=en&user=vfkTQcwAAAAJ" "https://github.com/Yrxxxxxxxx1007" "https://aclanthology.org/people/ruixuan-yang/") }}
+{{ $profile := dict "@type" "ProfilePage" "@id" (printf "%s#profile" $base) "name" "Ruixuan Yang | Academic Homepage" "url" $base "inLanguage" "en" "description" site.Params.hugoblox.identity.description "mainEntity" (dict "@id" $personID) }}
+{{ $graph := slice $profile $person }}
+{{ range hugo.Data.publications.main }}
+  {{ $authors := slice }}
+  {{ range .authors }}
+    {{ $author := dict "@type" "Person" "name" .name }}
+    {{ if eq .name "Ruixuan Yang" }}{{ $author = merge $author (dict "@id" $personID) }}{{ end }}
+    {{ $authors = $authors | append $author }}
+  {{ end }}
+  {{ $graph = $graph | append (dict "@type" "ScholarlyArticle" "@id" (printf "%s#%s" $base .id) "name" .title "headline" .title "url" (printf "%spublications/%s/" $base .id) "sameAs" .page "description" .summary "isPartOf" (dict "@type" "CreativeWork" "name" .venue) "author" $authors) }}
+{{ end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
+{{ end }}
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+{{ if eq .Type "publications" }}
+{{ with .Params.publication_date }}<meta name="citation_publication_date" content="{{ . }}">{{ end }}
+{{ if .IsPage }}
+<meta name="citation_title" content="{{ .Title | plainify }}">
+{{ range .Params.authors }}<meta name="citation_author" content="{{ if eq . "me" }}Ruixuan Yang{{ else }}{{ . }}{{ end }}">{{ end }}
+{{ range .Params.links }}{{ if eq .type "pdf" }}<meta name="citation_pdf_url" content="{{ .url }}">{{ end }}{{ end }}
+<meta name="citation_conference_title" content="{{ .Params.publication.name }}">
+{{ with .Params.hugoblox.ids.doi }}<meta name="citation_doi" content="{{ . }}">{{ end }}
+{{ end }}
+{{ end }}

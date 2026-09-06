@@ -1,0 +1,19 @@
+{
+  "name": "ruixuan-yang-academic-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.14.0",
+  "description": "Ruixuan Yang academic homepage, using Hugo Blox Academic CV.",
+  "scripts": {
+    "dev": "node scripts/prepare-tailwind.mjs && hugo server --disableFastRender",
+    "build": "node scripts/prepare-tailwind.mjs && hugo --minify",
+    "pagefind": "pagefind --site public"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "@tailwindcss/typography": "^0.5.10",
+    "pagefind": "^1.4.0",
+    "preact": "^10.27.2",
+    "tailwindcss": "^4.1.12"
+  }
+}

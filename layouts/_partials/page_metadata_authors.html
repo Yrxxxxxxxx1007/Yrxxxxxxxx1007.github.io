@@ -1,0 +1,9 @@
+{{/* Author names and contribution markers, shared by cards and paper pages. */}}
+{{- range $i, $raw := .Params.authors -}}
+  {{- if gt $i 0 }}, {{ end -}}
+  {{- if eq $raw "me" -}}<strong><a href="{{ site.Home.RelPermalink }}#about">Ruixuan Yang</a></strong>
+  {{- else -}}<span>{{ $raw }}</span>{{- end -}}
+  {{- with $.Params.author_notes -}}
+    {{- with index . $i -}}<sup class="equal-contribution" title="{{ . }}" aria-label="{{ . }}">*</sup>{{- end -}}
+  {{- end -}}
+{{- end -}}

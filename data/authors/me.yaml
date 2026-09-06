@@ -1,0 +1,57 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Ruixuan Yang
+  given: Ruixuan
+  family: Yang
+role: Undergraduate Student
+bio: 'I am **Ruixuan Yang**, an undergraduate in the [School of Mathematics and Statistics](https://math.xjtu.edu.cn/)
+  at [Xi''an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). I work on making large language models
+  more efficient and improving their reasoning through post-training.
+
+
+  I am currently a research intern in [Prof. Yulun Zhang''s group](https://yulunzhang.com/) at [Shanghai Jiao
+  Tong University](https://en.sjtu.edu.cn/) and a visiting student in the [ENCODE Lab](https://westlake-encode-lab.github.io/)
+  at [Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Huan Wang](https://huanwang.tech/).
+
+  '
+affiliations:
+- name: Xi'an Jiaotong University
+  url: https://www.xjtu.edu.cn/
+links:
+- icon: at-symbol
+  url: mailto:ruixuanyang1113@gmail.com
+  label: 'Email: ruixuanyang1113@gmail.com'
+- icon: hero/envelope
+  url: mailto:yangruixuan@stu.xjtu.edu.cn
+  label: 'University email: yangruixuan@stu.xjtu.edu.cn'
+- icon: academicons/google-scholar
+  url: https://scholar.google.com/citations?hl=en&user=vfkTQcwAAAAJ
+  label: Google Scholar
+- icon: brands/github
+  url: https://github.com/Yrxxxxxxxx1007
+  label: GitHub
+interests:
+- Model Efficiency
+- Post-training
+- Language Model Reasoning
+education:
+- degree: B.S. in progress
+  institution: Xi'an Jiaotong University
+  summary: School of Mathematics and Statistics
+experience:
+- role: Research Intern
+  org: Shanghai Jiao Tong University
+  start: '2026-07-01'
+  summary: '[Prof. Yulun Zhang''s group](https://yulunzhang.com/). Advised by Prof. Yulun Zhang.'
+- role: Visiting Student
+  org: Westlake University
+  start: '2026-04-01'
+  summary: '[ENCODE Lab](https://westlake-encode-lab.github.io/). Advised by [Prof. Huan Wang](https://huanwang.tech/).'
+- role: Visiting Student
+  org: Xi'an Jiaotong University
+  start: '2025-10-01'
+  end: '2026-05-31'
+  summary: '[Cognitive Architecture Group](https://xjtuiair-urlab.github.io/portal/), Institute of AI & Robotics.
+    Advised by [Prof. Pengju Ren](https://scholar.xjtu.edu.cn/en/persons/pengju-ren/) and Boran Zhao.'

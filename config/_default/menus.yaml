@@ -1,0 +1,16 @@
+main:
+- name: About
+  url: /#about
+  weight: 10
+- name: Research
+  url: /#research
+  weight: 20
+- name: Publications
+  url: /#papers
+  weight: 30
+- name: News
+  url: /#news
+  weight: 40
+- name: Experience
+  url: /#experience
+  weight: 50

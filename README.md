@@ -1,24 +1,33 @@
 # Ruixuan Yang — Academic Homepage
 
-[Visit Ruixuan Yang's homepage](https://yrxxxxxxxx1007.github.io/) · [Google Scholar](https://scholar.google.com/citations?user=vfkTQcwAAAAJ) · [ACL Anthology](https://aclanthology.org/people/ruixuan-yang/)
+Personal academic website: https://yrxxxxxxxx1007.github.io/
 
-I am an undergraduate in the School of Mathematics and Statistics at Xi'an Jiaotong University. My research focuses on efficient large language models and post-training, including token pruning, knowledge distillation, on-policy distillation (OPD), and chain-of-thought reasoning.
+Built with the original [Hugo Blox Academic CV](https://github.com/HugoBlox/hugo-theme-academic-cv) template, using its biography, publication cards, and experience blocks.
 
-This repository hosts my academic homepage, publications, news, education, and research experience.
+## Update content
 
-## Maintaining the homepage
+- `data/authors/me.yaml`: biography, contact links, education, and experience.
+- `content/_index.md`: research interests, news, and homepage sections.
+- `content/publications/compact/index.md` and `content/publications/mind/index.md`: paper metadata and author order.
+- `data/publications.yaml`: structured publication data for the homepage metadata.
+- `config/_default/params.yaml`: theme and site metadata.
 
-- **index.md**: biography, research interests, news, education, and experience.
-- **_data/publications.yml**: paper metadata and ordered author lists; equal-contribution markers are set per author.
-- **_layouts/homepage.html**: page layout, search metadata, and structured identity information.
-- **assets/css/custom.css**: responsive typography, layout, and light/dark colors.
-- **_config.yml**: personal details, account links, and the canonical site URL.
-- **robots.txt** and **sitemap.xml**: crawler access and the homepage sitemap.
+Jin Cui and Jiaqi Guo are equal first authors of COMPACT. Ruixuan Yang follows them and precedes Jiepeng Zhou. The MIND author order follows ACL Anthology.
 
-GitHub Pages builds the site with Jekyll from the main branch. The Validate homepage workflow checks builds on pushes and pull requests and saves a preview artifact.
+## Develop and publish
 
-## Credits
+Requires Hugo Extended 0.162.0, Go, Node.js 22+, and pnpm 10.14.0.
 
-The visual design uses [al-folio](https://github.com/alshedivat/al-folio) by Maruan Al-Shedivat. Its upstream styles and MIT license are preserved in assets/vendor/al-folio. The content is rendered with the existing Jekyll setup, with local adaptations in assets/css/custom.css. Roboto is self-hosted with its SIL Open Font License.
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm dev
+pnpm build
+```
 
-The repository was originally based on [Minimal Light](https://github.com/yaoyao-liu/minimal-light) by Yaoyao Liu; its original [license](LICENSE) is retained.
+GitHub Actions builds the site on every push and deploys successful builds from `main` to GitHub Pages.
+
+## Attribution
+
+Hugo Blox Academic CV and Hugo Blox Kit are distributed under the MIT license. See `HUGO-BLOX-LICENSE.md`. The repository history retains the previous Minimal Light and al-folio implementations and their licenses.
+
+The build prepares a local Tailwind CLI wrapper because Hugo 0.162 cannot resolve pnpm's `.pnpm` paths. The Node permission sandbox remains enabled. A local override also fixes the template's empty-map link deduplication. The fonts are bundled locally under their SIL Open Font Licenses.

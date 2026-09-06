@@ -1,0 +1,51 @@
+main:
+  - id: compact
+    title: '"The Whole Is Greater Than the Sum of Its Parts": A Compatibility-Aware Multi-Teacher CoT Distillation Framework'
+    authors:
+      - name: Jin Cui
+        equal: true
+      - name: Jiaqi Guo
+        equal: true
+      - name: Ruixuan Yang
+      - name: Jiepeng Zhou
+      - name: Jiayi Lu
+      - name: Jiajun Xu
+      - name: Jiangcheng Song
+      - name: Boran Zhao
+      - name: Pengju Ren
+    venue: IJCAI 2026
+    conference: International Joint Conference on Artificial Intelligence
+    status: Accepted
+    year: 2026
+    summary: Combining complementary teachers through student-aware supervision for more effective reasoning distillation.
+    page: https://arxiv.org/abs/2601.13992
+    pdf: https://arxiv.org/pdf/2601.13992
+    image: /assets/img/arxiv.png
+    image_width: 1020
+    image_height: 483
+    image_alt: Overview of the COMPACT multi-teacher reasoning distillation framework
+
+  - id: mind
+    title: 'MIND: From Passive Mimicry to Active Reasoning through Capability-Aware Multi-Perspective CoT Distillation'
+    authors:
+      - name: Jin Cui
+      - name: Jiaqi Guo
+      - name: Jiepeng Zhou
+      - name: Ruixuan Yang
+      - name: Jiayi Lu
+      - name: Jiajun Xu
+      - name: Jiangcheng Song
+      - name: Boran Zhao
+      - name: Pengju Ren
+    venue: ACL 2026
+    conference: Annual Meeting of the Association for Computational Linguistics
+    status: Main Conference · Long Paper
+    year: 2026
+    summary: Aligning diverse reasoning perspectives with the student's evolving capabilities to move beyond passive imitation.
+    page: https://aclanthology.org/2026.acl-long.2020/
+    pdf: https://aclanthology.org/2026.acl-long.2020.pdf
+    arxiv: https://arxiv.org/abs/2601.03717
+    image: /assets/img/MIND.png
+    image_width: 873
+    image_height: 428
+    image_alt: Overview of the MIND capability-aware multi-perspective distillation framework
