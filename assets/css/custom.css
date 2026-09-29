@@ -5,7 +5,30 @@ section[id], article[id], #publications { scroll-margin-top: 6rem; }
 .paper-authors strong { color: var(--color-gray-900); font-weight: 700; }
 .dark .paper-authors strong { color: var(--color-gray-100); }
 .paper-authors a { text-decoration: none; }
-.equal-contribution { margin-left: .05em; }
+.equal-contribution {
+  margin-left: .08em;
+  color: var(--color-primary-700, #1d4ed8);
+  font-size: .9em;
+  font-weight: 700;
+  line-height: 0;
+  position: relative;
+  top: -.35em;
+  vertical-align: baseline;
+}
+.dark .equal-contribution { color: var(--color-primary-300, #93c5fd); }
+.collaboration-callout {
+  margin-block-start: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-inline-start: 3px solid var(--color-primary-500, #3b82f6);
+  border-radius: .75rem;
+  background: color-mix(in srgb, var(--color-primary-500, #3b82f6) 8%, transparent);
+  color: var(--color-gray-800, #1f2937);
+}
+.collaboration-callout > p { margin: 0; }
+.dark .collaboration-callout {
+  background: color-mix(in srgb, var(--color-primary-400, #60a5fa) 14%, transparent);
+  color: var(--color-gray-100, #f3f4f6);
+}
 .paper-figure { border-bottom: 1px solid #e5e7eb; }
 #news table th:first-child, #news table td:first-child { min-width: 7.5rem; white-space: nowrap; }
 #news table { width: 100%; }

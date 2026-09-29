@@ -26,15 +26,10 @@ sections:
   content:
     title: Research
     text: |
-      I study how to make language and multimodal models more efficient, more capable, and better understood. My interests include:
-
-      **Model Efficiency.** Knowledge distillation, model and token pruning, and efficient training and inference.
-
-      **MLLMs.** Multimodal large language models, with an interest in visual understanding and multimodal reasoning.
-
-      **Post-training & Reasoning.** On-policy distillation (OPD), self-distillation, multi-teacher learning, and chain-of-thought distillation to improve model reasoning.
-
-      **Measuring AI Intelligence.** Understanding and evaluating the knowledge, reasoning, and generalization capabilities of AI systems.
+      - **Model Efficiency:** Knowledge distillation, model pruning, and token pruning.
+      - **MLLMs**
+      - **Post-training & Reasoning:** On-policy distillation (OPD) and self-distillation.
+      - **Measuring AI Intelligence**
 
       I am also open to related questions across machine learning and AI.
   design:

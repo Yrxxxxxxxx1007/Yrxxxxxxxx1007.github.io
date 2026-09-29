@@ -17,6 +17,7 @@
   {{ $author = $authorRaw }}
 {{ end }}
 {{ $profile := partial "functions/get_author_profile" $author }}
+{{ $author_data := index hugo.Data.authors $author | default dict }}
 {{ $avatar := $profile.avatar }}
 {{ $headings := index $content "headings" }}
 {{ if not (reflect.IsMap $headings) }}{{ $headings = dict }}{{ end }}
@@ -370,6 +371,11 @@
             <div class="bio-text" {{ if $bio_style }}{{ (printf "style=\"%s\"" $bio_style) | safeHTMLAttr }}{{ end }}>
               {{ . }}
             </div>
+            {{ with $author_data.collaboration }}
+            <aside class="collaboration-callout" aria-label="Research collaborations">
+              {{ $page.RenderString (dict "display" "block") . }}
+            </aside>
+            {{ end }}
           </div>
         </div>
         {{ end }}
