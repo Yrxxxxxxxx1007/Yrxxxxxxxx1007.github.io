@@ -10,6 +10,16 @@ authors:
 - Xingyu Chen
 - Xuguang Lan
 - Pengju Ren
+author_notes:
+- Equal contribution
+- Equal contribution
+- ''
+- ''
+- ''
+- ''
+- ''
+- ''
+- ''
 date: '2026-05-09'
 publishDate: '2026-05-09'
 publication_types:

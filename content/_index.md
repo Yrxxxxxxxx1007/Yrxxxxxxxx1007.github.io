@@ -26,9 +26,9 @@ sections:
   content:
     title: Research
     text: |
-      - **Model Efficiency:** Knowledge distillation, model pruning, and token pruning.
       - **MLLMs**
-      - **Post-training & Reasoning:** On-policy distillation (OPD) and self-distillation.
+      - **Model Efficiency**
+      - **Post-training & Reasoning**
       - **Measuring AI Intelligence**
 
       I am also open to related questions across machine learning and AI.
@@ -68,4 +68,12 @@ sections:
   design:
     date_format: Jan 2006
     is_education_first: false
+- block: markdown
+  id: hobbies
+  content:
+    title: Hobbies
+    text: |
+      Outside research, I enjoy **basketball**, **traveling**, and **music**, especially rock, hip-hop, and jazz. My favorite singers are **Ringo Sheena (椎名林檎)** and **Deserts Chang (张悬)**.
+  design:
+    columns: '1'
 ---

@@ -9,7 +9,7 @@ role: Undergraduate Student
 bio: |
   I am **Ruixuan Yang**, an undergraduate in the [School of Mathematics and Statistics](https://math.xjtu.edu.cn/) at [Xi'an Jiaotong University (XJTU)](https://www.xjtu.edu.cn/). My research spans efficient language and multimodal models, post-training and reasoning, and the measurement of AI intelligence.
 
-  I am currently a visiting student at [**Shanghai Jiao Tong University**](https://en.sjtu.edu.cn/) in [**Prof. Yulun Zhang's group**](https://yulunzhang.com/), and at [**Westlake University**](https://en.westlake.edu.cn/) in the [**ENCODE Lab**](https://westlake-encode-lab.github.io/), advised by [**Prof. Huan Wang**](https://huanwang.tech/).
+  I am currently a visiting student in [**Prof. Yulun Zhang's group**](https://yulunzhang.com/) at [**Shanghai Jiao Tong University**](https://en.sjtu.edu.cn/) and [**Prof. Huan Wang**](https://huanwang.tech/)'s [**ENCODE Lab**](https://westlake-encode-lab.github.io/) at [**Westlake University**](https://en.westlake.edu.cn/).
 collaboration: >-
   **I am actively seeking research collaborations.** I also welcome opportunities to exchange ideas and learn from one another.
   Please feel free to [**get in touch by email**](mailto:ruixuanyang1113@gmail.com) to discuss research or explore working together.
@@ -30,8 +30,8 @@ links:
   url: https://github.com/Yrxxxxxxxx1007
   label: GitHub
 interests:
+- MLLMs
 - Model Efficiency
-- Multimodal LLMs (MLLMs)
 - Post-training & Reasoning
 - Measuring AI Intelligence
 education:

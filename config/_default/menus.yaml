@@ -14,3 +14,6 @@ main:
 - name: Experience
   url: /#experience
   weight: 50
+- name: Hobbies
+  url: /#hobbies
+  weight: 60

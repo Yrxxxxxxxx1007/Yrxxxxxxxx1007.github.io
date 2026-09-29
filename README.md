@@ -14,7 +14,7 @@ Built with the original [Hugo Blox Academic CV](https://github.com/HugoBlox/hugo
 
 Jin Cui and Jiaqi Guo are equal first authors of COMPACT. Ruixuan Yang follows them and precedes Jiepeng Zhou. MIND follows the author order and equal-contribution markers in the [ACL Anthology PDF](https://aclanthology.org/2026.acl-long.2020.pdf): Jin Cui and Jiaqi Guo share equal contribution.
 
-LT-OPD follows [arXiv:2609.32353](https://arxiv.org/abs/2609.32353), with Junxian Li and Ruixuan Yang sharing equal contribution. ECHO follows the author list in [arXiv:2605.10993](https://arxiv.org/abs/2605.10993); its NeurIPS 2026 acceptance is supplied by the site owner. The publication dates distinguish first public release from conference publication. News covers papers and releases.
+LT-OPD follows [arXiv:2609.32353](https://arxiv.org/abs/2609.32353), with Junxian Li and Ruixuan Yang sharing equal contribution. ECHO follows the author list in [arXiv:2605.10993](https://arxiv.org/abs/2605.10993); its NeurIPS 2026 acceptance and the equal contribution of Yanbin Hu and Jin Cui are supplied by the site owner. The publication dates distinguish first public release from conference publication. News covers papers and releases.
 
 ## Develop and publish
 
