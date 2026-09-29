@@ -1,4 +1,51 @@
 main:
+  - id: lt-opd
+    title: 'Fewer Tokens, More Self-Teaching: On-Policy Self-Distillation for Extreme Visual Token Reduction'
+    authors:
+      - name: Junxian Li
+        equal: true
+      - name: Ruixuan Yang
+        equal: true
+      - name: Tianao Zhang
+      - name: Tiange Xu
+      - name: Weisheng Dong
+      - name: Yulun Zhang
+    venue: arXiv 2026
+    status: Preprint
+    year: 2026
+    summary: Recovering multimodal capabilities under extreme visual-token reduction through on-policy self-distillation and a progressive token-budget curriculum.
+    page: https://arxiv.org/abs/2609.32353
+    pdf: https://arxiv.org/pdf/2609.32353
+    code: https://github.com/Yrxxxxxxxx1007/LT-OPD
+    image: /publications/lt-opd/featured.png
+    image_width: 1200
+    image_height: 603
+    image_alt: LT-OPD framework with a low-token student, a frozen full-token teacher, and a token-budget curriculum
+
+  - id: echo
+    title: 'ECHO: Continuous Hierarchical Memory for Vision-Language-Action Models'
+    authors:
+      - name: Yanbin Hu
+      - name: Jin Cui
+      - name: Jiayi Lu
+      - name: Ruixuan Yang
+      - name: Jun Ye
+      - name: Boran Zhao
+      - name: Xingyu Chen
+      - name: Xuguang Lan
+      - name: Pengju Ren
+    venue: NeurIPS 2026
+    conference: Conference on Neural Information Processing Systems
+    status: Accepted
+    year: 2026
+    summary: Organizing robot experiences in a continuous hierarchical memory to support retrieval and generalization in long-horizon tasks.
+    page: https://arxiv.org/abs/2605.10993
+    pdf: https://arxiv.org/pdf/2605.10993
+    image: /publications/echo/featured.png
+    image_width: 1200
+    image_height: 588
+    image_alt: ECHO architecture integrating a hierarchical memory system with a vision-language-action model
+
   - id: compact
     title: '"The Whole Is Greater Than the Sum of Its Parts": A Compatibility-Aware Multi-Teacher CoT Distillation Framework'
     authors:

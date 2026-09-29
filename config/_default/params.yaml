@@ -5,8 +5,8 @@ hugoblox:
     organization: ''
     type: person
     tagline: ''
-    description: Ruixuan Yang is an undergraduate at XJTU researching efficient language models, token pruning,
-      and post-training through on-policy and reasoning distillation.
+    description: Ruixuan Yang is an undergraduate at XJTU researching model efficiency, multimodal LLMs,
+      post-training and reasoning, and the measurement of AI intelligence.
     social: {}
   theme:
     mode: system
@@ -57,7 +57,7 @@ hugoblox:
       share_alike: true
       allow_commercial: false
   seo:
-    title: Ruixuan Yang | Efficient LLMs & Post-training | XJTU
+    title: Ruixuan Yang | Efficient & Multimodal AI | XJTU
     location:
       address:
         street: ''

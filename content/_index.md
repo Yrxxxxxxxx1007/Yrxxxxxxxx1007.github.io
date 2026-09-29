@@ -1,7 +1,7 @@
 ---
 title: ''
-summary: Ruixuan Yang is an undergraduate at XJTU researching efficient language models, token pruning, and
-  post-training through on-policy and reasoning distillation.
+summary: Ruixuan Yang is an undergraduate at XJTU researching model efficiency, multimodal LLMs, post-training
+  and reasoning, and the measurement of AI intelligence.
 type: landing
 sections:
 - block: resume-biography-3
@@ -25,16 +25,18 @@ sections:
   id: research
   content:
     title: Research
-    text: 'My research centers on efficient language models and how they learn to reason.
+    text: |
+      I study how to make language and multimodal models more efficient, more capable, and better understood. My interests include:
 
+      **Model Efficiency.** Knowledge distillation, model and token pruning, and efficient training and inference.
 
-      **Model efficiency.** Token pruning and knowledge distillation to reduce the cost of language model inference.
+      **MLLMs.** Multimodal large language models, with an interest in visual understanding and multimodal reasoning.
 
+      **Post-training & Reasoning.** On-policy distillation (OPD), self-distillation, multi-teacher learning, and chain-of-thought distillation to improve model reasoning.
 
-      **Post-training & reasoning.** On-policy distillation (OPD), multi-teacher learning, and chain-of-thought
-      distillation to improve reasoning capabilities.
+      **Measuring AI Intelligence.** Understanding and evaluating the knowledge, reasoning, and generalization capabilities of AI systems.
 
-      '
+      I am also open to related questions across machine learning and AI.
   design:
     columns: '1'
 - block: collection
@@ -54,22 +56,13 @@ sections:
   id: news
   content:
     title: News
-    text: '| Date | Update |
-
+    text: |
+      | Date | Update |
       | :--- | :--- |
-
-      | **Jul 2026** | Joined [Prof. Yulun Zhang''s group](https://yulunzhang.com/) at Shanghai Jiao Tong University
-      as a research intern. |
-
+      | **Sep 2026** | Our preprint **[LT-OPD](/publications/lt-opd/)**, *Fewer Tokens, More Self-Teaching*, is now available on arXiv. |
+      | **Sep 2026** | **[ECHO](/publications/echo/)** was accepted to **NeurIPS 2026**. |
       | **Apr 2026** | **[COMPACT](/publications/compact/)** was accepted to **IJCAI 2026**. |
-
-      | **Apr 2026** | **[MIND](/publications/mind/)** was accepted to **ACL 2026** as a main-conference long
-      paper. |
-
-      | **Apr 2026** | Joined the ENCODE Lab at Westlake University as a visiting student, advised by [Prof.
-      Huan Wang](https://huanwang.tech/). |
-
-      '
+      | **Apr 2026** | **[MIND](/publications/mind/)** was accepted to **ACL 2026** as a main-conference long paper. |
   design:
     columns: '1'
 - block: resume-experience
